@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EntidadController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Ruta para la funcionalidad Entidades
+Route::resource('entidades',EntidadController::class);
