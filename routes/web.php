@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\EntidadController;
+use App\Http\Controllers\ProgramaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +26,6 @@ Route::get('/home', function () {
 
 // Ruta para la funcionalidad Entidades
 Route::resource('entidades',EntidadController::class);
+
+// Ruta para la funcionalidad Entidades
+Route::resource('programas',ProgramaController::class);
