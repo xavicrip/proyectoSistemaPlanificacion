@@ -67,7 +67,7 @@ class EntidadController extends Controller
     {
         //Llama al formulario para editar la informacion
 
-        $entidades = Entidad::findOrFail($id);
+        $entidad = Entidad::findOrFail($id);
         return view('entidades.edit', compact('entidad'));
     }
 
@@ -79,7 +79,7 @@ class EntidadController extends Controller
         //// 1. valido las peticiones
 
         $request->validate([
-            'id'=>'required|unique:entidades,id',
+            
             'nombre'=>'required|string',
             'tipo'=>'required|string',
             'responsable'=>'required|string',
