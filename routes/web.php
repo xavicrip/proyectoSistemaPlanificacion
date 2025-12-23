@@ -29,3 +29,5 @@ Route::resource('entidades',EntidadController::class);
 
 // Ruta para la funcionalidad Entidades
 Route::resource('programas',ProgramaController::class);
+
+Route::post('/entidades', [EntidadController::class, 'store']);
